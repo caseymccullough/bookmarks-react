@@ -53,8 +53,8 @@ const getBookmarks = async () => {
   /* Form Functions */
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target});
-  }
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
 /* 
 //might eventually use this 
   const handleCheckBox = (e) => {

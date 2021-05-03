@@ -13,6 +13,10 @@ header{
 
 }
 
+input{
+  margin: 0 6px;
+}
+
 #bookmark-list{
   margin: 70px 80px;
   border: 1px solid black;
