@@ -139,14 +139,18 @@ useEffect(() => {
      <div id="bookmark-list">
        {bookmarks.map((bookmark, i) => {
         return (
+          
           <div className="single-bookmark" key={bookmark._id}>
-            <h3>{bookmark.title}</h3>
+            <a href = {bookmark.url} >
+              <h3>{bookmark.title}</h3>
+            </a>
             <h3 className= "delete-button-x"
               onClick={(e) => {
                 deleteBookmark(e, bookmark._id);
               }}
             >X</h3>
           </div>
+          
         )})
         
       }
